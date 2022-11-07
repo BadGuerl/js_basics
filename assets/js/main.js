@@ -7,15 +7,26 @@ if (userEmail.endsWith("@ironhack.com") && !userEmail.includes(" ")) {
   let kind;
   switch (userEmail) {
     case 'carlos@ironhack.com':
-      kind = 'teacher';
     case 'julio@ironhack.com':
       kind = 'teacher';
+      break;
     case 'moi@ironhack.com':
       kind = 'TA';
+      break;
     default:
       kind = 'student';
   }
-alert(`The user is ${kind}`);
+
+// if (useEmail === 'carlos@ironhack.com' || userEmail === 'julio@ironhack.com') {
+//   kind = 'teacher';
+// } else if (userEmail === 'moi@ironhack.com') {
+//   kind = 'TA';
+// } else{
+//   kind = 'student';
+// } 
+
+
+  alert(`The user is ${kind}`);
 } else {
   alert(`Invalid email ${userEmail}`);
 }
